@@ -1,6 +1,7 @@
 from room import Room
 from player import Player
 from world import World
+from divination import MagicMap
 
 import random
 
@@ -21,7 +22,8 @@ player = Player("Name", world.startingRoom)
 
 
 # FILL THIS IN
-traversalPath = ['n', 's']
+magic_map = MagicMap(world)
+traversalPath = magic_map.guide()
 
 
 # TRAVERSAL TEST
